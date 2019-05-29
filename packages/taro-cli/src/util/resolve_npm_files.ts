@@ -435,6 +435,7 @@ async function recursiveRequire ({
         code: fileContent,
         sourcePath: filePath,
         adapter: buildAdapter,
+        isNormal: true,
         isTyped: REG_TYPESCRIPT.test(filePath),
         env: constantsReplaceList
       })
