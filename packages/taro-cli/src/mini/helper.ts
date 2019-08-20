@@ -3,7 +3,7 @@ import * as path from 'path'
 
 import * as _ from 'lodash'
 import { Config } from '@tarojs/taro'
-import { IProjectConfig } from '@tarojs/taro/types/compile'
+import { IProjectConfig, ITaroManifestConfig } from '@tarojs/taro/types/compile'
 import wxTransformer from '@tarojs/transformer-wx'
 import getHashName from '../util/hash'
 
@@ -37,8 +37,7 @@ import {
 import { resolveNpmPkgMainPath } from '../util/resolve_npm_files'
 import {
   IOption,
-  INpmConfig,
-  ITaroManifestConfig
+  INpmConfig
 } from '../util/types'
 import CONFIG from '../config'
 
